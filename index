@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>봄이샵 - 어린이 용품 전문몰</title>
+  <style>
+    /* 기본 스타일 */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9fafc;
+      color: #333;
+    }
+
+    header {
+      background: #ffd84d;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+
+    /* 히어로 배너 */
+    .hero {
+      background: url("https://source.unsplash.com/1600x600/?kids,toys") no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      background: rgba(0,0,0,0.3);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+    }
+
+    /* 상품 영역 */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: #444;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <h1>봄이샵</h1>
+    <nav>
+      <a href="#">홈</a>
+      <a href="#">상품</a>
+      <a href="#">문의</a>
+    </nav>
+  </header>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <h2>아이들을 위한 따뜻한 선택 💛</h2>
+  </section>
+
+  <!-- 상품 목록 -->
+  <section class="products">
+    <div class="product">
+      <img src="https://source.unsplash.com/400x300/?toy" alt="장난감">
+      <div class="product-info">
+        <h3>귀여운 장난감</h3>
+        <p class="price">₩15,000</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://source.unsplash.com/400x300/?kids,clothes" alt="어린이 옷">
+      <div class="product-info">
+        <h3>편안한 어린이 옷</h3>
+        <p class="price">₩25,000</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://source.unsplash.com/400x300/?baby,stroller" alt="유모차">
+      <div class="product-info">
+        <h3>튼튼한 유모차</h3>
+        <p class="price">₩150,000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <p>© 2025 봄이샵 | 어린이 용품 전문몰</p>
+  </footer>
+</body>
+</html>
